@@ -12,7 +12,7 @@
                 "panel": "shared"
             },
             "linux": {
-                "command": "cd ${workspaceRoot}/Builds/LinuxMakefile/ && make CONFIG=Debug -j -s 2>&1 && cd build",
+                "command": "cd '${workspaceRoot}/Builds/LinuxMakefile/' && make CONFIG=Debug -j -s 2>&1 && cd build",
             },
             "osx": {
                 "command": "xcodebuild",
@@ -52,7 +52,7 @@
                 "panel": "shared"
             },
             "linux": {
-                "command": "cd ${workspaceRoot}/Builds/LinuxMakefile/ && make CONFIG=Release -j -s 2>&1 && cd build",
+                "command": "cd '${workspaceRoot}/Builds/LinuxMakefile/' && make CONFIG=Release -j -s 2>&1 && cd build",
             },
             "osx": {
                 "command": "xcodebuild",
@@ -92,7 +92,7 @@
                 "panel": "shared"
             },
             "linux": {
-                "command": "cd ${workspaceRoot}/Builds/LinuxMakefile/ && make clean",
+                "command": "cd '${workspaceRoot}/Builds/LinuxMakefile/' && make clean",
             },
             "osx": {
                 "command": "cd ${workspaceRoot}/Builds/MacOSX/ && rm -rf build",
